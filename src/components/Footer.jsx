@@ -47,7 +47,7 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <ul className="space-y-2 text-gray-300">
               <li className="flex items-center gap-2">
-                <a href="mailto:events@society.com" className="flex items-center gap-2 hover:text-white transition duration-300">
+                <a href="mailto:eventssociety.klsac@gmail.com" className="flex items-center gap-2 hover:text-white transition duration-300">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
@@ -60,7 +60,7 @@ const Footer = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                   </svg>
-                  <span>+91 7032894189</span>
+                  <span>+91 9505993133</span>
                 </a>
               </li>
               <li className="flex items-center gap-2">
@@ -79,11 +79,12 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Find Us</h3>
             <div className="w-full h-52">
               <iframe 
-                src="https://maps.app.goo.gl/B7JDB7Jb6S5VqaAH7"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.6630445431465!2d80.62001967460738!3d16.441930829353733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f0a2a7d81943%3A0x8ba5d78f65df94b8!2sK%20L%20E%20F%20Deemed%20To%20Be%20University!5e0!3m2!1sen!2sin!4v1731691781126!5m2!1sen!2sin"
                 className="w-full h-full rounded-lg"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
                 title="Location Map"
               ></iframe>
             </div>

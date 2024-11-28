@@ -5,6 +5,14 @@ import image from "../assets/logo.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleNavClick = () => {
+    setIsOpen(false);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <nav className="fixed w-full z-50 bg-transparent">
       <div className="container mx-auto px-6 py-4">
@@ -43,30 +51,35 @@ const Navbar = () => {
             <Link
               to="/"
               className="text-white/80 hover:text-white font-medium transition duration-300 hover:scale-105 hover:bg-purple-600 px-4 py-2 rounded-lg"
+              onClick={handleNavClick}
             >
               Home
             </Link>
             <Link
               to="/about"
               className="text-white/80 hover:text-white font-medium transition duration-300 hover:scale-105 hover:bg-purple-600 px-4 py-2 rounded-lg"
+              onClick={handleNavClick}
             >
               About
             </Link>
             <Link
               to="/team"
               className="text-white/80 hover:text-white font-medium transition duration-300 hover:scale-105 hover:bg-purple-600 px-4 py-2 rounded-lg"
+              onClick={handleNavClick}
             >
               Team
             </Link>
             <Link
               to="/event"
               className="text-white/80 hover:text-white font-medium transition duration-300 hover:scale-105 hover:bg-purple-600 px-4 py-2 rounded-lg"
+              onClick={handleNavClick}
             >
               Event
             </Link>
             <Link
               to="/gallery"
               className="text-white/80 hover:text-white font-medium transition duration-300 hover:scale-105 hover:bg-purple-600 px-4 py-2 rounded-lg"
+              onClick={handleNavClick}
             >
               Gallery
             </Link>
@@ -79,35 +92,35 @@ const Navbar = () => {
             <Link
               to="/"
               className="block text-white/80 hover:text-white font-medium transition duration-300 hover:bg-purple-600 px-4 py-2 rounded-lg"
-              onClick={() => setIsOpen(false)}
+              onClick={handleNavClick}
             >
               Home
             </Link>
             <Link
               to="/about"
               className="block text-white/80 hover:text-white font-medium transition duration-300 hover:bg-purple-600 px-4 py-2 rounded-lg"
-              onClick={() => setIsOpen(false)}
+              onClick={handleNavClick}
             >
               About
             </Link>
             <Link
               to="/team"
               className="block text-white/80 hover:text-white font-medium transition duration-300 hover:bg-purple-600 px-4 py-2 rounded-lg"
-              onClick={() => setIsOpen(false)}
+              onClick={handleNavClick}
             >
               Team
             </Link>
             <Link
               to="/event"
               className="block text-white/80 hover:text-white font-medium transition duration-300 hover:bg-purple-600 px-4 py-2 rounded-lg"
-              onClick={() => setIsOpen(false)}
+              onClick={handleNavClick}
             >
               Event
             </Link>
             <Link
               to="/gallery"
               className="block text-white/80 hover:text-white font-medium transition duration-300 hover:bg-purple-600 px-4 py-2 rounded-lg"
-              onClick={() => setIsOpen(false)}
+              onClick={handleNavClick}
             >
               Gallery
             </Link>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -35,7 +36,7 @@ const Home = () => {
           <h1 className="text-7xl font-extrabold mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
             Events Society
           </h1>
-          <p className="text-2xl font-light text-gray-300">Where Moments Become Memories</p>
+          <p className="text-2xl font-light text-gray-300">Let's Craft Our Skills Together</p>
         </div>
       </div>
 
@@ -43,7 +44,7 @@ const Home = () => {
       <div className="py-24 bg-black">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-5xl font-bold text-center mb-16 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-            What About Events Club
+             About Events Club
           </h2>
           <div className="flex justify-center">
             <div className="max-w-2xl">
@@ -52,6 +53,14 @@ const Home = () => {
                 exciting events for our community. Our club brings together passionate individuals
                 who love creating memorable experiences through various activities and gatherings.
               </p>
+              <div className="flex justify-center mt-8">
+                <Link 
+                  to="/about"
+                  className="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:opacity-90 transition-opacity"
+                >
+                  More About Us
+                </Link>
+              </div>
             </div>
           </div>
         </div>
